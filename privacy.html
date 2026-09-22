@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Offline AI Clock</title>
+<meta name="description" content="Privacy policy for Offline AI Clock. The app collects nothing and makes no network connections.">
+<style>
+  :root { --bg:#000; --surface:#0d0e10; --line:#2a2d32; --ink:#fff; --ink-2:#9ba2aa; --ink-3:#676e76; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text",Segoe UI,Roboto,sans-serif;
+         -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:64px 24px 96px; }
+  h1 { font-size:clamp(28px,6vw,40px); margin:0 0 8px; letter-spacing:-0.02em; font-weight:600; }
+  .updated { color:var(--ink-3); font-size:14px; margin:0 0 40px; }
+  h2 { font-size:19px; margin:44px 0 12px; font-weight:600; }
+  p, li { color:var(--ink-2); }
+  strong { color:var(--ink); font-weight:600; }
+  .panel { background:var(--surface); border:1px solid var(--line); border-radius:20px;
+           padding:24px 26px; margin:28px 0; }
+  .panel p:first-child { margin-top:0; } .panel p:last-child { margin-bottom:0; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); color:var(--ink-2); }
+  th { color:var(--ink); font-weight:600; }
+  a { color:var(--ink); }
+  footer { border-top:1px solid var(--line); margin-top:56px; padding-top:24px;
+           color:var(--ink-3); font-size:14px; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#fff; --surface:#f4f5f7; --line:#e2e4e8; --ink:#000; --ink-2:#565c63; --ink-3:#8a9097; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Offline AI Clock for iPhone and iPad · last updated 22 September 2026</p>
+
+  <div class="panel">
+    <p><strong>Offline AI Clock collects nothing, sends nothing and stores nothing
+    outside your device.</strong> It has no account system, no analytics, no
+    advertising and no network code. Everything below is detail on that.</p>
+  </div>
+
+  <h2>This is checkable, not just claimed</h2>
+
+  <p>A privacy policy is only worth what can be verified against it. Two things
+  here can be, without taking anybody's word:</p>
+
+  <ul>
+    <li><strong>Turn on Airplane Mode before you open the app.</strong> Every
+        feature works identically, including the assistant. Nothing degrades,
+        because nothing was ever going anywhere.</li>
+    <li><strong>The app is not built with networking in it.</strong> Not
+        "networking that is switched off" — the shipped binary does not link
+        iOS's networking frameworks at all. There is no code in it that could
+        open a connection.</li>
+  </ul>
+
+  <h2>What the app stores, and where</h2>
+
+  <p>Your alarms, timers, stopwatch, pinned cities and settings are written to
+  the app's own private storage on your device. They are not copied anywhere
+  else. Deleting the app deletes them.</p>
+
+  <table>
+    <tr><th>What</th><th>Where it is kept</th></tr>
+    <tr><td>Alarms</td><td>A file in the app's private container, plus a second copy beside it so a damaged file cannot lose your alarms silently</td></tr>
+    <tr><td>Timers</td><td>A file in the app's private container</td></tr>
+    <tr><td>Pinned cities, settings, stopwatch</td><td>The app's own preferences</td></tr>
+    <tr><td>What you type to the assistant</td><td>In memory only. It is never written to disk, and it is gone when you clear the conversation or the app closes</td></tr>
+    <tr><td>Scheduled alarms and timers</td><td>Held by iOS on the device — the time and the label, nothing else</td></tr>
+    <tr><td>Reminder notifications</td><td>The iOS notification system, on the device</td></tr>
+  </table>
+
+  <p>If an alarm file is ever found damaged — after a device restore, say — the
+  app keeps the damaged copy rather than deleting it, so nothing you set can
+  disappear without trace, and it tells you on the Alarms screen that it did so.
+  That file stays in the app's private container like everything else, and goes
+  when the app does.</p>
+
+  <h2>The assistant</h2>
+
+  <p>The language model is a file inside the app and runs on your device. What
+  you type is turned into a prompt on the device, answered on the device, and
+  never transmitted. There is no server, no API key and nothing to sign in to.</p>
+
+  <p>Two things it does not do, which are worth saying plainly because similar
+  apps do them: it does not use what you type to train anything, and it does not
+  keep a history. Each question is answered on its own and then forgotten.</p>
+
+  <p>The app itself — not the model — works out your alarms, timers, durations
+  and time-zone answers. Any sentence the model writes that contains a figure is
+  discarded before you see it.</p>
+
+  <h2>What the app does not do</h2>
+
+  <ul>
+    <li>No accounts, sign-in, or email address.</li>
+    <li>No analytics, crash reporting or telemetry of any kind. No analytics,
+        advertising or attribution SDK is embedded — the only third-party code
+        in the app is the model runtime listed below, which has no network
+        access of any kind.</li>
+    <li>No advertising, ad identifiers or tracking. Nothing is shared with
+        anyone, so App Tracking Transparency does not apply and the app never
+        shows that prompt.</li>
+    <li>No contacts, photos, location, microphone, camera or health data. The app
+        never asks for them, and there is no code in it that reads them.</li>
+    <li>No cloud service of its own. If you have iCloud device backup switched
+        on, the app's files are included in that backup, which is Apple's
+        service and subject to Apple's terms — not ours, because there is no
+        ours.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+
+  <p>The app asks for exactly one thing: permission to send notifications, the
+  first time you switch an alarm on, because an alarm cannot ring without it.
+  The notifications are created and scheduled on your device. They are not push
+  notifications; no server is involved and nothing about them is sent anywhere.</p>
+
+  <p>Setting a real alarm also asks for alarm permission, which you grant from a
+  banner on the Alarms screen. Alarms and timers are then held by iOS itself so
+  they can ring with the app closed. What iOS is given is the time it should
+  ring and the label you typed — nothing else, and nowhere but this device.</p>
+
+  <p>Both permissions can be withdrawn at any time in iOS Settings. Without
+  them the app keeps working; only the ringing gets weaker.</p>
+
+  <h2>Children and age rating</h2>
+
+  <p>The app collects no personal information from anyone, of any age, and has
+  no way to. It does include an assistant powered by a language model that
+  answers what you type, which is reflected in its App Store age rating — please
+  see the rating on the App Store listing for the current classification.</p>
+
+  <h2>Your rights</h2>
+
+  <p>Regulations such as the GDPR and the CCPA give you rights of access,
+  correction, deletion and portability over personal data a company holds about
+  you. No personal data about you is held, received or processed by us at any
+  point, so there is nothing to disclose, correct, export or erase on request.</p>
+
+  <p>The data the app creates lives on your device and is yours already:
+  deleting the app removes all of it, immediately and completely.</p>
+
+  <h2>Third-party components</h2>
+
+  <p>The app includes llama.cpp (MIT licensed, © 2023–2024 The ggml authors) to
+  run the model, and the Llama 3.2 1B Instruct model file itself (© Meta
+  Platforms, Inc., used under the Llama 3.2 Community License). Both are
+  compiled into the app and run locally. Neither contacts its authors, us, or
+  anybody else. Built with Llama.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If a future version of the app changes what it does with data, this page
+  will be updated before that version is released, and the date at the top will
+  change. If a future version ever gained a network feature, it would be
+  described here, in plain words, before you could install it.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about this policy:
+  <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a></p>
+
+  <footer>
+    <p>Offline AI Clock for iPhone and iPad. Requires iOS 26 or later.</p>
+  </footer>
+
+</div>
+</body>
+</html>
